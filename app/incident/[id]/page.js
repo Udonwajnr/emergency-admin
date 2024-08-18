@@ -45,7 +45,7 @@ export default function IncidentDetail() {
             <p><span className="font-bold">Nature of Incident:</span> {incident.natureOfIncident}</p>
             <p><span className="font-bold">Comment:</span> {incident.comment || "No comment"}</p>
 
-            <h2 className="text-xl font-semibold mb-2">Additional Information</h2>
+            <h2 className="text-xl font-semibold mb-2">Image of the Scene</h2>
             {incident.fileUrl ? (
               isImage(incident.fileUrl) ? (
                 <img src={incident.fileUrl} alt="Incident File" className="max-w-full h-auto rounded-lg shadow-md" />
