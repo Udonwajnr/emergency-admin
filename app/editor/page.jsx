@@ -24,7 +24,8 @@ const Page = () => {
 
   return (
     <Container>
-      <main className="p-3">      
+      <main className="p-3">    
+        <h2 className="text-3xl font-bold text-center">Create Post</h2>  
         <div className="mb-2">
           <label>Title</label>
           <input value={title} onChange={(e)=>setTitle(e.target.value)} className="capitalize w-full h-10 border focus:outline-none px-2"/>

@@ -32,6 +32,8 @@ export default function Home() {
     // Implement view functionality here
   };
 
+  console.log(incidents)
+
   return (
     <Container>
       <main className="p-3">
@@ -70,7 +72,7 @@ export default function Home() {
                   <td className="px-6 py-4 border-b border-gray-200 text-sm text-gray-700">{incident.user}</td>
                   <td className="px-6 py-4 border-b border-gray-200 text-sm text-gray-700">
                     <Link href={`incident/${incident._id}`} className="text-green-500 hover:underline mr-2">View</Link>
-                    <Link href="" className="text-red-500 hover:underline">Delete</Link>
+                    <Link href={`incident/delete/${incident._id}`} className="text-red-500 hover:underline">Delete</Link>
                   </td>
                 </tr>
               )) : (
